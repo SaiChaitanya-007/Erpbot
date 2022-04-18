@@ -8,19 +8,19 @@ driver = webdriver.Chrome(PATH)
 driver.get("https://erp.iitkgp.ac.in/SSOAdministration/login.htm?sessionToken=D70E5CA42EBEFD39B691DB12EE50F2AE.worker1&requestedUrl=https://erp.iitkgp.ac.in/IIT_ERP3/")
 driver.maximize_window()
 user_id = driver.find_element_by_id("user_id")
-user_id.send_keys("18CY20028")
+user_id.send_keys("*********")
 password = driver.find_element_by_id("password")
-password.send_keys("Greatgod@007")
+password.send_keys("**********")
 time.sleep(1)
 ques = driver.find_element_by_id("question")
 question = ques.text
 ans = driver.find_element_by_id("answer")
 if question == "what is your motto?":
-    ans.send_keys("rise")
+    ans.send_keys("****")
 elif question == "what is your favourite character?":
-    ans.send_keys("karna")
+    ans.send_keys("****")
 else:
-    ans.send_keys("mahabharat")
+    ans.send_keys("*******")
 time.sleep(1)
 
 driver.find_element_by_id("loginFormSubmitButton").click()
